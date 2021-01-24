@@ -43,3 +43,12 @@ formOpen_02.addEventListener('click', function(){
 		formOpen_02.innerHTML = "close";
 	}
 });
+
+
+//Sliders
+$(document).ready(function() {
+	$('.slider').slick({
+		arrows:true,
+		dots:true,
+	});
+});
