@@ -26,3 +26,20 @@ if(isMobile.any()){
 }else{
 	body.classList.add('mouse');
 }
+
+let formOpen_02=document.querySelector('.icon');
+let formOpen=document.querySelector('.form');
+
+console.log(formOpen);
+
+formOpen_02.addEventListener('click', function(){
+	console.log(formOpen.style.height)
+	if(formOpen.style.height > '0px'){
+		formOpen.style.height = '0px';
+		formOpen_02.innerHTML = "open";
+		console.log(formOpen.style.height)
+	}else{
+		formOpen.style.height = '450px';
+		formOpen_02.innerHTML = "close";
+	}
+});
