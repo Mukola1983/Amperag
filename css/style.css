@@ -630,6 +630,11 @@ body.touch .arrow {
   box-shadow: 0 0 38px #A75A15;
   transition-duration: 0.4s;
 }
+@media (max-width: 767px) {
+  .slider__item img {
+    max-height: 100px;
+  }
+}
 .slider__item img:hover {
   box-shadow: 0 0 68px #46B3B3;
   transition-duration: 0.4s;
