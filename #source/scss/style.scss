@@ -48,6 +48,9 @@ body {
 		}
 	}
 	&__info-content {
+		@media (max-width:767px){
+			border: none;
+		}
 		display: flex;
 		border: 2px solid #7A7A6B ;
 	}
@@ -55,6 +58,9 @@ body {
 		display: flex;
 		align-items: center;
 		& span{
+			@media (max-width:767px){
+				font-size: 60px;
+			}
 			font-size: 110px;
 			font-weight: 500;
 			color: #ABAB95 ;
@@ -67,6 +73,9 @@ body {
 		}
 	}
 	&__info-contacts {
+		@media (max-width:767px){
+			border: none;
+		}
 		border: 2px solid #7A7A6B ;
 		padding: 30px 10px;
 		margin: 0 0 0 15px;
@@ -205,6 +214,10 @@ body.touch .arrow{
 }
 
 @media (max-width:767px){
+	.container{
+		margin: 0 15px;
+//		padding: ;
+	}
 	.header__title{
 		flex-wrap:wrap;
 	}
@@ -276,6 +289,9 @@ body.touch .arrow{
 	font-size: 12px;
 }
 .form {
+	@media (max-width:767px){
+		background: rgba(24,181,164,1)
+	}
 	position: absolute;
 	width: 100%;
 	background: rgba(24,181,164,0.3);
@@ -371,11 +387,18 @@ body.touch .arrow{
 		}
 	}
 	&__row {
+		@media (max-width:767px){
+
+		}
 		display: flex;
 		justify-content:space-between;
 		margin: 20px 0;
 	}
 	&__row-column {
+		@media (max-width:767px){
+			margin: 10px;
+			display: block;
+		}
 		background: rgba(48, 42, 37 ,0.5);
 		text-align: center;
 		display: flex;
