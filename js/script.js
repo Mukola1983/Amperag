@@ -50,5 +50,28 @@ $(document).ready(function() {
 	$('.slider').slick({
 		arrows:true,
 		dots:true,
+		slidesToScroll:1,
+		slidesToShow:1,
+		speed:300,
+		autoplay:false,
+		autoplaySpeed:2000,
+		pauseOnFocus: true,
+		pauseOnHocer: true,
+		pauseOnDotsHover: true,
+		draggable:true,
+		swipe:true,
+		waitForAnimate:true, //швидкімть прокрутки слайдера
+		centerMode:true,
+		rows:1,
+		fade:false,
+		responsive:[    //adaptive
+			{
+				breakpoint:768,
+				settings:{
+					arrows:false,
+					autoplay:true,
+				}
+			}
+		]
 	});
 });
